@@ -1,0 +1,161 @@
+.dashboard-wrapper {
+    padding: 5rem;
+
+    .dashboard-first-card {
+        background: $light-background;
+        padding: 2rem;
+        margin-top: 3rem;
+        border-radius: 0.65rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .dashboard-first-numbers {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: rgb(61, 59, 59);
+            }
+
+            span {
+                font-size: 2.5rem;
+                font-weight: 800;
+            }
+        }
+    }
+
+    .chart-bar-dashboard {
+        background: $light-background;
+        margin-top: 4rem;
+        border-radius: 0.65rem;
+
+        .title{
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-bottom: 1px solid $border;
+            padding: 1.4rem;
+            background: $background;
+            border-top-right-radius: 0.6rem;
+            border-top-left-radius:0.6rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-container {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .figure {
+            background: #ebebeb !important;
+        }
+        
+        .highcharts-figure {
+
+            .highcharts-title {
+                display: none !important;
+            }
+
+            .highcharts-credits {
+                display: none !important;
+            }
+
+            .highcharts-exporting-group {
+                display: none !important;
+            }
+
+            .highcharts-background {
+                fill: #f9fafc !important;
+                    fill: rgb(255, 255, 255);
+                    filter: none;
+                    width: 700;
+                    height: 400 !important;
+            }
+
+            #container_pie {
+                height: 450px !important;
+                border-radius: 0.65rem;
+            }
+            
+        }
+       
+    }
+
+    .candidate-table-dashboard {
+        background: $light-background;
+        margin-top: 4rem;
+        border-radius: 0.65rem;
+
+        .title{
+            font-size: 1.6rem;
+            font-weight: 600;
+            border-bottom: 1px solid $border;
+            padding: 1.4rem;
+            background: $background;
+            border-top-right-radius: 0.6rem;
+            border-top-left-radius:0.6rem;
+            margin-bottom: 2rem;
+        }
+        .dashboard-added-list {
+            padding: 0 1.5rem 2rem 1.5rem;
+            height: 500px;
+            overflow: scroll;
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+    
+            .responsive-table {
+                li {
+                  border-radius: 0.6rem;
+                  padding: 1.8rem;
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 1rem;
+                  align-items: center;
+                  text-align: center;
+                }
+                .table-header {
+                  background-color: $primary;
+                  font-size: 1.3rem;
+                  letter-spacing: 0.03em;
+                  color: $white;
+                  position: sticky;
+                  top: 0;
+                }
+                .table-row {
+                  background-color: $white;
+                  font-size: 1.4rem;
+                  font-weight: 600;
+                  cursor: pointer;
+                  text-align: left;
+    
+                  .sector_id {
+                    width: 33% !important;
+                    display: flex;
+                    justify-content: start;
+                  }
+    
+                  .candidate_amount {
+                    display: flex;
+                    width: 33% !important;
+                  }
+    
+                  .candidate_status {
+                    width: 33% !important;
+                    display: flex;
+                    justify-content: end;
+                  }
+                }
+               
+              }
+        }
+    }
+    
+}

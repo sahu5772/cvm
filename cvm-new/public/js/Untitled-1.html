@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Master - Industries - CV Manager</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Icons css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="menu__item">
+          <div class="logo">
+            <a href="#"
+              ><img src="../assets/images/logo.png" alt="" width="150"
+            /></a>
+          </div>
+          <!-- ./logo -->
+          <div class="nav--menu">
+            <a href="#">Dashboard</a>
+            <a href="#">Candidates</a>
+            <a href="./job-post/jobs-list.html">Job Post</a>
+            <a href="#">Search Resumes</a>
+            <a href="../master/industries.html">Masters</a>
+            <a href="#">CRU Team</a>
+          </div>
+          <!-- ./nav--menu -->
+          <div class="action--menu">
+            <div class="notification">
+              <img src="../assets/images/icons/bell.png" alt="" />
+              <span class="bell-noti"></span>
+            </div>
+            <div class="dropdown profile_wrap">
+              <button class="dropdown-toggle drawerOpen" type="button">
+                <img src="../assets/images/profile.jpg" alt="" />
+                <div class="profile--con">
+                  <div class="name">Pristian Meliodus</div>
+                  <div class="emp">EMP10000</div>
+                </div>
+                <!-- ./profile--con -->
+                <svg
+                  width="20"
+                  class="openmenu"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    class="top"
+                    d="M0 9h30v2H0z"
+                    data-svg-origin="15 10"
+                    transform="matrix(1,0,0,1,0,0)"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 0px 0px;
+                    "
+                  ></path>
+                  <path
+                    class="bot"
+                    d="M0 19h30v2H0z"
+                    data-svg-origin="15 20"
+                    transform="matrix(1,0,0,1,0,0)"
+                    style="
+                      translate: none;
+                      rotate: none;
+                      scale: none;
+                      transform-origin: 0px 0px;
+                    "
+                  ></path>
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <!-- <a class="dropdown-item" href="#">Reports</a>
+                <a class="dropdown-item" href="./role-permissions.html">Roles & Permission</a>
+                <a class="dropdown-item" href="#">Setting</a>
+                <a class="dropdown-item" href="#">Raise Tickets</a>
+                <a class="dropdown-item" href="#">Logout</a> -->
+              </div>
+              <!-- ./dropdown-menu -->
+            </div>
+          </div>
+          <!-- ./action--menu -->
+        </div>
+      </div>
+      <!-- ./container -->
+    </header>
+
+    <div class="sidebar-overlay"></div>
+    <div class="dropSide_menu" id="drawerMenu">
+      <div class="btn__close" id="drawerClose">close</div>
+      <!-- ./btn__close -->
+      <div class="menu__warpper">
+        <a class="menu--item" href="#"
+          ><img src="../assets/images/icons/report.png" alt="" />Reports</a
+        >
+        <a class="menu--item" href="../employee/employee.html"
+          ><img src="../assets/images/icons/report.png" alt="" />Employee</a
+        >
+        <a class="menu--item" href="../company/company.html"
+          ><img src="../assets/images/icons/report.png" alt="" />Company</a
+        >
+        <a class="menu--item" href="../role-permissions.html"
+          ><img src="../assets/images/icons/workforce.png" alt="" />Roles &
+          Permission</a
+        >
+        <a class="menu--item" href="#"
+          ><img src="../assets/images/icons/settings.png" alt="" />Setting</a
+        >
+        <a class="menu--item" href="#"
+          ><img src="../assets/images/icons/ticket.png" alt="" />Raise
+          Tickets</a
+        >
+        <a class="menu--item" href="#">Logout</a>
+      </div>
+    </div>
+
+    <main class="master__wrapper">
+      <aside class="side__menu">
+        <ul class="metismenu" id="masterMenu" style="display: none">
+          <li class="active">
+            <a href="javascript:void(0);" aria-expanded="false">
+              <span>
+                <img src="../assets/images/analysis.png" alt="" />
+                core sectors
+              </span>
+              <i class="las la-angle-down"></i>
+            </a>
+            <ul aria-expanded="false">
+              <li><a href="industries.html" class="active">Industries</a></li>
+              <li><a href="sectors.html">Sectors</a></li>
+              <li><a href="?">Phases</a></li>
+              <li><a href="?">Keywords</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="javascript:void(0);" aria-expanded="false">
+              <span>
+                <img src="../assets/images/icons/mortarboard.png" alt="" />
+                Education
+              </span>
+              <i class="las la-angle-down"></i
+            ></a>
+            <ul aria-expanded="false">
+              <li><a href="?">Education Level</a></li>
+              <li><a href="?">Degrees</a></li>
+              <li><a href="?">Institutes</a></li>
+              <li><a href="?">Education Mode</a></li>
+              <li><a href="?">Universities</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="javascript:void(0);" aria-expanded="false">
+              <span>
+                <img src="../assets/images/icons/diploma.png" alt="" />
+                Certificates
+              </span>
+              <i class="las la-angle-down"></i
+            ></a>
+            <ul aria-expanded="false">
+              <li><a href="?">Certificates</a></li>
+              <li><a href="?">Membership</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="javascript:void(0);" aria-expanded="false">
+              <span>
+                <img src="../assets/images/icons/layers.png" alt="" />
+                FUNDED PROJECTS
+              </span>
+              <i class="las la-angle-down"></i
+            ></a>
+            <ul aria-expanded="false">
+              <li><a href="?">Funding Agencies</a></li>
+              <li><a href="?">Terrain</a></li>
+              <li><a href="?">Pavement</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <a href="javascript:void(0);" aria-expanded="false">
+              <span>
+                <img src="../assets/images/icons/mortarboard.png" alt="" />
+                GENERAL
+              </span>
+              <i class="las la-angle-down"></i
+            ></a>
+            <ul aria-expanded="false">
+              <li><a href="?">Languages</a></li>
+              <li><a href="?">Designations</a></li>
+              <li><a href="?">Countries</a></li>
+              <li><a href="?">States</a></li>
+              <li><a href="?">Cities</a></li>
+              <li><a href="?">Skills</a></li>
+              <li><a href="?">Job Type</a></li>
+              <li><a href="?">Benefits</a></li>
+              <li><a href="?">Roles</a></li>
+              <li><a href="?">Role Categories</a></li>
+              <li><a href="?">Employment Type</a></li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <!-- ./side__menu -->
+
+      <section class="inner__wrapper">
+        <div class="title">Industry</div>
+        <div class="row">
+          <div class="col-4">
+            <form action="">
+              <div class="add__option">
+                <div class="input_grp">
+                  <label for="">Industry Name</label>
+                  <input type="text" placeholder="type here..." />
+                </div>
+              </div>
+
+              <!-- ./add__option -->
+              <div class="button_flex">
+                <button type="button" class="btn_style" id="toasted_btn">Save</button>
+                <button type="reset" class="btn_style ghost_btn">Cancel</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-8">
+            <div class="table__wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" width="18%">Sr No.</th>
+                    <th scope="col">Industry</th>
+                    <th scope="col" width="10%"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>civil</td>
+                    <td>
+                      <div class="action--dropdown">
+                        <button
+                          class="dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <img src="../assets/images/icons/more.png" alt="" />
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a
+                            class="dropdown-item"
+                            href="#"
+                            aria-expanded="false"
+                            data-toggle="modal"
+                            data-target="#editModal"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                        <!-- ./dropdown-menu -->
+                      </div>
+                      <!-- ./action--dropdown -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Metro</td>
+                    <td>
+                      <div class="action--dropdown">
+                        <button
+                          class="dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <img src="../assets/images/icons/more.png" alt="" />
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a
+                            class="dropdown-item"
+                            href="#"
+                            aria-expanded="false"
+                            data-toggle="modal"
+                            data-target="#editModal"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                        <!-- ./dropdown-menu -->
+                      </div>
+                      <!-- ./action--dropdown -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Test House</td>
+                    <td>
+                      <div class="action--dropdown">
+                        <button
+                          class="dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <img src="../assets/images/icons/more.png" alt="" />
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a
+                            class="dropdown-item"
+                            href="#"
+                            aria-expanded="false"
+                            data-toggle="modal"
+                            data-target="#editModal"
+                            >Edit</a
+                          >
+                          <a class="dropdown-item" href="#">Delete</a>
+                        </div>
+                        <!-- ./dropdown-menu -->
+                      </div>
+                      <!-- ./action--dropdown -->
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- ./table__wrapper -->
+          </div>
+        </div>
+        <!-- ./row -->
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-keyboard="false"
+      data-backdrop="static"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit details</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 6L6 18"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 6L18 18"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="input_grp">
+                    <label for=""
+                      >Industry Name <span class="reqText">*</span></label
+                    >
+                    <input type="text" placeholder="type here..." />
+                  </div>
+                  <!-- ./input_grp -->
+                </div>
+              </div>
+              <!-- ./row -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn_style ghost_btn"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn_style">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- toast button -->
+    <div class="toast active">
+      <div class="toast-content">
+        <i class="fa fa-solid fa-check check"></i>
+
+        <div class="message">
+          <span class="text text-1">Success</span>
+          <span class="text text-2">Your changes has been saved</span>
+        </div>
+      </div>
+      <i class="fa fa-times close"></i>
+
+      <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+      <div class="progress active"></div>
+    </div>
+
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <script>
+      const button = document.querySelector("#toasted_btn"),
+        toast = document.querySelector(".toast");
+      (closeIcon = document.querySelector(".close")),
+        (progress = document.querySelector(".progress"));
+
+      let timer1, timer2;
+
+      button.addEventListener("click", () => {
+        toast.classList.add("active");
+        progress.classList.add("active");
+
+        timer1 = setTimeout(() => {
+          toast.classList.remove("active");
+        }, 4000); //1s = 1000 milliseconds
+
+        timer2 = setTimeout(() => {
+          progress.classList.remove("active");
+        }, 4300);
+      });
+
+      closeIcon.addEventListener("click", () => {
+        toast.classList.remove("active");
+
+        setTimeout(() => {
+          progress.classList.remove("active");
+        }, 300);
+
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      });
+    </script>
+    
+  </body>
+</html>

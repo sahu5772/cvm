@@ -1,0 +1,184 @@
+.rolePermissions_wrapper {
+    padding-block: 5rem;
+
+    .d-flex {
+        margin-bottom: 5rem;
+        justify-content: space-between;
+
+        .btn_style {
+            padding: 1.4rem 2rem;
+
+            img {
+                width: 2rem;
+                filter: invert(1);
+            }
+        }
+    }
+
+    .roles_permission {
+        display: flex;
+        gap: 60px;
+
+        .nav-tabs {
+            border-bottom: none;
+            gap: 3rem;
+            display: flex;
+            flex-direction: column;
+
+            .nav-item {
+                // flex: 1;
+
+                &:first-child {
+                    background: $light-background;
+
+                    .nav-link {
+                        cursor: auto;
+                    }
+                }
+            }
+
+            .nav-link {
+                padding: 2rem;
+                border-radius: .8rem;
+                border: 2px solid $border;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                text-align: left;
+
+                &.active {
+                    background: $secondary;
+
+                    .headText {
+                        color: $white;
+                    }
+
+                    .infoText,
+                    span {
+                        color: rgba(255, 255, 255, 0.8) !important;
+                    }
+
+                    .permission_btn {
+                        background: $white;
+                    }
+                }
+
+                .text {
+                    .headText {
+                        font-weight: 600;
+                        margin-bottom: .8rem;
+                    }
+
+                    .infoText,
+                    span {
+                        font-size: 1.4rem;
+                        // font-weight: 500;
+                        color: $text;
+                    }
+                }
+
+                .permission_btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    border-radius: .6rem;
+                    padding: .8rem 1.5rem;
+                    background: $background;
+                    font-size: 1.3rem;
+
+                    img {
+                        width: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        flex: 3;
+    }
+
+    // ====
+    .permissions_access_wrap {
+        padding-top: 2rem;
+
+        .page_permission {
+            margin-bottom: 5rem;
+
+            .title {
+                font-size: 1.8rem;
+                margin-bottom: 4rem;
+            }
+
+            .rp_list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 3rem;
+                margin-bottom: 3rem;
+                border-bottom: 2px solid $border;
+                padding-bottom: 3rem;
+
+                .rp_item {
+                    flex: 1;
+
+
+                }
+            }
+        }
+    }
+
+}
+
+.modal {
+    table {
+        .infoDetText {
+            font-size: 1.3rem;
+            color: $text;
+            font-weight: 500;
+        }
+
+        .reset_action {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1.6rem;
+
+            .reset_button {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                background: $background;
+                padding: 1.2rem 1.5rem;
+                border-radius: .6rem;
+                cursor: pointer;
+                // color: $text;
+                font-weight: 500;
+                transition: .2s ease-in-out;
+                border: 1px solid transparent;
+
+                &:hover {
+                    border-color: $border;
+                    background: transparent;
+                }
+            }
+
+            .delete_btn {
+                border-color: $error-color;
+                color: $error-color;
+                background: transparent;
+
+                svg {
+                    path {
+                        stroke: $error-color;
+                    }
+                }
+
+                &:hover {
+                    background: $background;
+                }
+            }
+        }
+    }
+}
